@@ -1,0 +1,20 @@
+{
+  "name": "@local/dsh-reflex",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "反射层薄插件：把 127.0.0.1:8811 的动作服务挂成两个工具（reflex_status / reflex_run）",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
